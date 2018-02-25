@@ -1,0 +1,120 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+}
+
+header button {
+    width: 30px;
+    height: 30px;
+}
+
+.title {
+    line-height: 0;
+    margin-top: 15px;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    background-color: #6c4ddb;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
+
+.navigation.responsive li a {
+    padding: .5rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.current {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.highlow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast {
+    display: none;
+}
+
+.articlediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article h3 {
+    line-height: 0;
+    padding-top: 15px;
+}
+
+article img {
+    width: 350px;
+    height: 150px;
+}
+
+aside {
+    text-align: center;
+    line-height: 0;
+}
+
+.footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
