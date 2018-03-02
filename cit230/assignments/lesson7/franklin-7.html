@@ -64,21 +64,18 @@
                     </div>
 
                     <div class="highlow">
-                        <p>High:43&#176;F</p>
-                        <p>Low:26&#176;F</p>
+                        <p>High:<span id="h">43</span>&#176;F</p>
+                        <p>Low:<span id="l">26</span>&#176;F</p>
                     </div>
 
                     <div class="conditions">
                         <p>Precipitation:0 in</p>
-                        <p>Wind Speed:W 9 mph</p>
+                        <p>Wind Speed:<span id="s">9</span> mph</p>
+                        <p>Wind Chill: <span id="windChill"></span> &#176;F</p>
                     </div>
                 </div>
             </section>
             
-            <section>
-               <input type="submit" onclick="computeNum()" value="Wind Chill Calculation">
-                <div id="output">Output Placeholder</div>
-            </section>
         </div>
 
         <section class="forecast">
@@ -144,6 +141,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 

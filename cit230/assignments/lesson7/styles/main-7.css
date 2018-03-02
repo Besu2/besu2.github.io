@@ -118,3 +118,21 @@ aside {
     justify-content: space-around;
     align-items: center;
 }
+
+.grid-container img{
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: cornflowerblue;
+    grid-gap: 1px 1px;
+    padding: 2px;
+}
+.grid-item {
+    background-color: darkkhaki;
+    border: 1px solid; 
+    padding: 10px;
+    text-align: center;
+}

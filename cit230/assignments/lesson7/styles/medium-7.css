@@ -1,7 +1,5 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-    
-    
     header,
     nav {
         margin: 0 auto;
@@ -95,19 +93,23 @@
     tr:nth-child(even) {
         background-color: #f2f2f2
     }
-    
+
     .articlediv {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 5px;
     }
-    
-    article p{
+
+    article p {
         width: 50%;
     }
-    
-    article img{
+
+    article img {
         width: 50%;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
