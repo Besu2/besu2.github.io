@@ -44,13 +44,75 @@
     </nav>
 
     <main>
-     <h2>Storm Center</h2>
-     <form action="thanks.html">
-        <div>
-         <label for="">Full Name</label>
-         <input type="text" name="fullName" required>
-         </div>
-         <div>
-             <input type="date"..
-         </div>
-     </form>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" is required id="fullName" title="Use only letters. Length must be at least five characters." pattern="[A-Za-z\s]+[A-Za-z]{5,}" placeholder="your full name">
+            </div>
+            <div>
+                <label for="emailAddress">Email</label>
+                <input type="email" name="Email" placeholder="youremail@host.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone</label>
+                <input type="tel" name="Phone" is required>
+            </div>
+            <div>
+                <label for="zipCode">Zip Code</label>
+                <input type="number" is required>
+            </div>
+            <div>
+                <input type="date">
+            </div>
+           
+            <div>
+                <label for="StormType">Storm Type</label>
+                <input list="StormTypes" name="Storm Type">
+                <datalist id="StormTypes">
+                   <option value="Flash Flood">
+                   <option value="Hail">
+                   <option value="Huricane">
+                   <option value="Thunderstorm">
+                   <option value="Tornado">
+                </datalist>
+            </div>
+            <div class="severity">
+                <label for="stormSeverity">Storm Severity:</label>
+                <input type="range" name="stormSeverity" id="stormSverity" value="6" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="severityValue">6</span>
+            </div>
+            <div>
+                <select>
+                 <option value="instruction" selected disabled>Select Region</option>
+                  <option value="Franklin">Franklin</option>
+                  <option value="Greenville">Greenville</option>
+                  <option value="Springfield">Springfield</option>
+                  <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div>
+              <fieldset>
+                    <legend>Is User In-Danger?</legend>
+                    <input type="radio" name="Danger" id="User In-Danger?">
+                    <label for="inDanger">Yes</label>
+                    <input type="radio" name="Danger" id="User In-Danger?">
+                    <label for="inDanger">Maybe</label>
+                    <input type="radio" name="Danger" id="User In-Danger?">
+                    <label for="inDanger">No</label>
+                </fieldset>
+            </div>
+            <div style="display: flex;">
+                <label style="align-content: flex-start"
+                       for="additionalInformation">Additional Information:</label>
+                <textarea name="additionalInformation"
+                id="additionalInformation" style="height: 25em; width: 25em;"></textarea>       
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            
+        </form>
+    </main>
+    </body>
+</html>
