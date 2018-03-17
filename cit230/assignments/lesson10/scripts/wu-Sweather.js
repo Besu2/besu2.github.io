@@ -17,6 +17,6 @@ var Sweather = new XMLHttpRequest();
 Sweather.open("GET", "https://api.wunderground.com/api/cccf4eb42a498271/forecast10day/q/MN/Springfield.json", true);
 Sweather.send();
 Sweather.onload = function () {
-    var weather = JSON.parse(Fweather.responseText);
+    var weather = JSON.parse(Sweather.responseText);
     document.getElementById("Sforecast").innerHTML = weather.forecast.txt_forecast.forecastday["0"].fcttext;
 }
