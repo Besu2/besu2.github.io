@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BBQ Weather</title>
+    <meta name="author" content="Besu Lemma">
+    <meta name="description" content="Franklin Website Week 5">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-7.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-7.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-7.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <div class="title">
+            <h1>Franklin</h1>
+            <p class="subheading">Daily Weather Information</p>
+        </div>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="franklin.html">Franklin</a></li>
+            <li><a href="Greenville.html">Greenville</a></li>
+            <li><a href="Springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The City of Franklin</h2>
+        <div class="section1">
+            <figure>
+                <img srcset="images/franklin-small.jpg 400w,
+                         images/franklin-medium.jpg 800w,
+                         images/franklin-large.jpg 1200w">
+            </figure>
+
+            <section>
+                <h3>Weather Summary</h3>
+                <div class="summary">
+
+                    <div class="current">
+                        <p id="Fcurrent">Sunny</p>
+                        <picture>
+                            <img src="images/Sunrise.jpg" alt="Sun Rise" width="80px" height="50px" id="Fimg">
+                        </picture>
+                    </div>
+
+                    <div class="highlow">
+                        <p>High:<span id="Fh">43</span>&#176;F</p>
+                        <p>Low:<span id="l">26</span>&#176;F</p>
+                    </div>
+
+                    <div class="conditions">
+                        <p>Precipitation:<span id="Fprecipitation">0</span>in</p>
+                        <p>Wind Speed:<span id="Fs">9</span> mph</p>
+                        <p>Wind Chill: <span id="Fwindchill"></span> &#176;F</p>
+                        <p>Forecast: <span id="Fforecast"></span></p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <div class="articlediv">
+                <p class="town-article">
+                    To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on. In views it or meant drift to. Be concern parlors settled or do shyness address. Remainder northward performed out for moonlight. Yet late add name was rent park from rich. He always do do former he highly.
+                </p>
+                <img src="images/article.jpeg" alt="" width="" height="">
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>BBQ Weather</p>
+            <p>1234 S 4th W</p>
+            <p>Franklin, NV 73245</p>
+            <p>654-231-1772</p>
+            <p>weather@franklin.org</p>
+        </aside>
+        <div class="footer-bar">
+            <p>&copy;2018 All Rights Reserved </p>
+            <p>BBQ Weather</p>
+            <span id="currentdate"></span>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu-Fweather.js"></script>
+
+</body>
+
+</html>

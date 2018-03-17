@@ -8,3 +8,7 @@ header img {
     width: 20em;
     height: 20em;
 }
+fieldset {
+    margin: 10px;
+    border-color: chartreuse;
+}

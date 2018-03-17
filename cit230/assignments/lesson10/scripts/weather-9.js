@@ -18,13 +18,21 @@
 
      for (var i = 0; i < towns.length; i++) {
          if (towns[i].name != "Placerton") {
-             var div = document.createElement('div')
+             var div = document.createElement('div');
              div.className = "weatherdiv";
-             var h1 = document.createElement('h1')
-             var p1 = document.createElement('p')
-             var p2 = document.createElement('p')
-             var p3 = document.createElement('p')
-             var p4 = document.createElement('p')
+             var img = document.createElement('img');
+             var h1 = document.createElement('h1');
+             var p1 = document.createElement('p');
+             var p2 = document.createElement('p');
+             var p3 = document.createElement('p');
+             var p4 = document.createElement('p');
+
+             if (towns[i].name == "Springfield")
+                 img.setAttribute("src", "images/weather2.jpg");
+             else if (towns[i].name == "Franklin")
+                 img.setAttribute("src", "images/weather3.jpg");
+             else if (towns[i].name == "Greenville")
+                 img.setAttribute("src", "images/weather4.jpg");
 
              h1.textContent = towns[i].name;
              p1.textContent = "Motto:" + towns[i].motto;
@@ -32,6 +40,7 @@
              p3.textContent = "Current Population:" + towns[i].currentPopulation;
              p4.textContent = "Average Rainfall:" + towns[i].averageRainfall;
 
+             div.appendChild(img);
              div.appendChild(h1);
              div.appendChild(p1);
              div.appendChild(p2);

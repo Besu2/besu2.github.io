@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     flex-direction: row;
@@ -20,14 +21,18 @@ header button {
 }
 
 .hamburger {
-    display: block;
+    display:inline-block;
     position: absolute;
     top: 2.0rem;
     right: 1.25rem;
 }
+body {
+    font-size: 17x;
+    font-family: 'open Sans', sans-serif;
+}
 
 .navigation {
-    list-style: none;
+    list-style: block;
     padding-left: 0;
 }
 
