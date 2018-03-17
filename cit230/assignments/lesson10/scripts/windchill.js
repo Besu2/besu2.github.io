@@ -1,6 +1,6 @@
-var h = document.getElementById("h").innerHTML;
-var l = document.getElementById("l").innerHTML;
-var s = document.getElementById("s").innerHTML;
+var h = document.getElementById("Fh").innerHTML;
+var l = document.getElementById("Fl").innerHTML;
+var s = document.getElementById("Fs").innerHTML;
 
 h = parseInt(h);
 l = parseInt(l);
@@ -12,4 +12,4 @@ var w = Math.pow(s, 0.16);
 var f = 35.74 + 0.6215 * t - 35.75 * w + 0.4275 * t * w;
 f = f.toFixed(2);
 
-document.getElementById("windChill").innerHTML = f;
+document.getElementById("FwindChill").innerHTML = f;
