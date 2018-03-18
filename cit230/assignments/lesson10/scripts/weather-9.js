@@ -28,7 +28,7 @@
              var p4 = document.createElement('p');
 
              if (towns[i].name == "Springfield")
-                 img.setAttribute("src", "images/weather5.jpg");
+                 img.setAttribute("src", "images/weather1.jpg");
              else if (towns[i].name == "Franklin")
                  img.setAttribute("src", "images/weather3.jpg");
              else if (towns[i].name == "Greenville")
