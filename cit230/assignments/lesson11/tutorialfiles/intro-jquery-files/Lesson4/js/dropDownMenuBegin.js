@@ -1,5 +1,5 @@
  $(function () {
-$('.dropdownmenu > li').hover(function(){
+$('.dropdownMenu > li').hover(function(){
     $(this).children("ul").slideDown(200);
 }, function(){
     $(this).children('ul').slideUp(200);
