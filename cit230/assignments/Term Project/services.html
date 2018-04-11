@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Besu Lemma">
+    <meta name="description" content="Final Term Project">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Lobster|Press+Start+2P" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+
+</head>
+
+<body>
+
+    <header>
+        <p class="center"><img src="images/logo1.jpg" alt="The site logo"></p>
+        <div class="title">
+            <h1>The Mountain Spoke</h1>
+            <p class="subheading">The Ultimate Fun With Bikes</p>
+        </div>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul id="mainmenu" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="contact.html" S>Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+   <br>
+        <h2>Our Services</h2>
+        <figure>
+            <img src="images/servicing.jpg" alt="Bike Servicing">
+        </figure>
+        <p>Our certified bike technicians will keep you moving forward!</p> 
+        <p class="center"><iframe width="340" height="160" src="https://www.youtube.com/embed/KLPIe2Ze3jQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br><br>
+        
+    </main>
+
+     <footer>
+        <aside>
+            <p class="center">The Mountain Spoke</p>
+            <p class="center">3950 Valley Commons Drive</p>
+            <p class="center">Bozeman, MT</p>
+            <p class="center">654-231-1772</p>
+            <p class="center">bikes@mountainspoke.com</p>
+        </aside>
+        <div class="footer-bar">
+            <p>&copy;2018 All Rights Reserved </p>
+            <p>The Mountain Spoke</p>
+            <span id="currentdate"></span>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/wayFinding.js"></script>
+</body>
+
+</html>

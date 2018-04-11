@@ -1,0 +1,60 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #52AD9C;
+        overflow: hidden;
+        text-align: center;
+    }
+    .navigation li {
+        display: block;
+        margin-left: .25rem;
+    }
+    .navigation a {
+        color: #eee;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover {
+        color: #000;
+        background-color: #ddd;
+    }
+    
+    .address{
+        position: relative;
+        padding: 46%;
+        padding-top: 35px;
+        overflow: hidden;
+    }
+    
+    .address iframe{
+        position: absolute;
+        width: 50%;
+        height: 70%;
+        top: 0;
+        left: 20px;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: [col1-start] 324px [col2-start] 300px [col3-start] 300px [col3-end];
+        grid-template-rows: [row1-start] 400px [row2-start] 400px [row2-end];
+        background-color: #fff;
+        color: #444;
+    }
+}
