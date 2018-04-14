@@ -28,7 +28,7 @@
         <p class="center"><img src="images/logo1.jpg" alt="The site logo"></p>
         <div class="title">
             <h1>The Mountain Spoke</h1>
-            <p class="subheading">The Ultimate Fun With Bikes</p>
+            <p class="subheading">Our Annual and Monthly Events</p>
         </div>
         <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
     </header>
@@ -47,23 +47,45 @@
 
 
     <main>
-        <div class="wrapper">
-            <div class="box a"><img src="images/biker1.jpg"></div>
-            <div class="box b">B</div>
-            <div class="box c">C</div>
-            <div class="box d">D</div>
+        <div>
+            <div><img src="images/events1.jpg"></div>
         </div>
+         <h2>Please register to be a part of this unforgettable experience</h2>
+        <form action="index.html">
+            <div>
+                <label for="fullName">Registrar's Full Name</label>
+                <input type="text" name="fullName" is required id="fullName" title="Use only letters. Length must be at least five characters." pattern="[A-Za-z\s]+[A-Za-z]{5,}" placeholder="your full name">
+            </div>
+            <div>
+                <label for="emailAddress">Email</label>
+                <input type="email" name="Email" placeholder="youremail@host.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone</label>
+                <input type="tel" name="Phone" is required>
+            </div>
+            <div>
+                <label for="StateorCountry">Home State or Country</label>
+                <input type="state">
+            </div>
+            <div>
+                <label for="date">Birth Date</label>
+                <input type="date">
+            </div>
+            <div style="display: flex;">
+                <label style="align-content: flex-start"
+                       for="additionalInformation">Special Accommodations/Comments:</label>
+                <textarea name="additionalInformation"
+                id="additionalInformation" style="height: 25em; width: 25em;"></textarea>       
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
     </main>
 
 
     <footer>
-        <aside>
-            <p class="center">The Mountain Spoke</p>
-            <p class="center">3950 Valley Commons Drive</p>
-            <p class="center">Bozeman, MT</p>
-            <p class="center">654-231-1772</p>
-            <p class="center">bikes@mountainspoke.com</p>
-        </aside>
         <div class="footer-bar">
             <p>&copy;2018 All Rights Reserved </p>
             <p>The Mountain Spoke</p>

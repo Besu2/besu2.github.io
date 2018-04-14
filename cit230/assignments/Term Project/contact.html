@@ -45,18 +45,36 @@
         </ul>
     </nav>
     <main>
-        <h2>Do you have any question or concern?</h2>
-        <p>We care for your safety. We are very easy to reach. Use the following information to contact us.</p> <br>
-        <br>
-        <p>You are welcome to come and visit us at our office: 3950 Valley Commons Drive, Bozeman, MT.</p>
+        <h2>Our Contact Information</h2>
+        <p>Office Phone: 654-231-1772</p>
+        <p>Office Hours:Weekdays 7am-7pm and Sat. 9am-4pm</p>
+        <p>You are welcome to come visit us at our office: 3950 Valley Commons Drive, Bozeman, MT.</p>
+
         <div class="address">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.9621151165882!2d-111.090722402442!3d45.67242138389065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523386462419" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <p>Office Phone: 654-231-1772</p>
-        <p>Office Hours:Weekdays 7am-7pm and Sat. 9am-4pm</p>
-        <figure>
-            <img src="images/contact.jpg" alt="Office Building">
-        </figure>
+        <h2>Contact Us</h2>
+        <form action="index.html">
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" is required id="fullName" title="Use only letters. Length must be at least five characters." pattern="[A-Za-z\s]+[A-Za-z]{5,}" placeholder="your full name">
+            </div>
+            <div>
+                <label for="emailAddress">Email</label>
+                <input type="email" name="Email" placeholder="youremail@host.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone</label>
+                <input type="tel" name="Phone" is required>
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
 
     </main>
 
